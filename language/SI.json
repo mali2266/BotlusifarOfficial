@@ -5,7 +5,7 @@
     "AUTHOR": "AsenaDev",
     "STRINGS": {
         "_asena": {
-            "COMMAND": "විදානය",
+            "COMMAND": "විධානය",
             "DESC": "විස්තර",
             "EXAMPLE": "උදාහරණ",
             "NOT_FOUND": "*මෙසේ විදානයක් නොමැත.*",
