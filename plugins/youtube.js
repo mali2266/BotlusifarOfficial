@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const lusifar = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const Config = require('../config');
@@ -39,8 +39,8 @@ var gis = require('g-i-s');
 const { BYE_LOGO } = require('../config');
 let treue = Config.WORKTYPE == 'public' ? false : true
 //=====================================================================================
-
- Asena.addCommand({pattern: 'yt ?(.*)', fromMe: false,  deleteCommand: false, desc: Lang.YT_DESC}, (async (message, match) => { 
+const KSK = Config.WORKTYPE == 'public' ? false : true
+ lusifar.addCommand({pattern: 'yt ?(.*)', fromMe: KSK,  deleteCommand: false, desc: Lang.YT_DESC}, (async (message, match) => { 
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
     var searching = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text, {quoted: message.data});
@@ -59,7 +59,7 @@ let treue = Config.WORKTYPE == 'public' ? false : true
     await message.client.sendMessage(message.jid, '*❖  Lusifar youtube search Engine ❖*\n' + 'Result ...' + '\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n' + ytgot,MessageType.text, {quoted: message.data});
 }));
 
-Asena.addCommand({pattern: 'yt ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.YT_DESC}, (async (message, match) => { 
+lusifar.addCommand({pattern: 'yt ?(.*)', fromMe: true,  deleteCommand: false, desc: Lang.YT_DESC}, (async (message, match) => { 
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
     var searching = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text, {quoted: message.data});
