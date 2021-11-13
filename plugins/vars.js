@@ -21,8 +21,8 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     }
     if (config.LANG == 'SI') {
         l_dsc = 'ස්ව්‍යංක්‍රීය voice පනිවිඩ යැවීම සක්‍රීය කිරීම හා අක්‍රීය කිරීම - බොට් හිමිකරුට පමණක් ක්‍රියා කරයි'
-        BGM_on = 'bgm අක්‍රීය කර ඇත!'
-        BGM_off = 'bgm සක්‍රීය කර ඇත'
+        BGM_on = 'bgm සක්‍රීය කර ඇත!'
+        BGM_off = 'bgm අක්‍රීය කර ඇත'
     }
  else {
         l_dsc = 'turn on and turn of bgm. -bot owner command'
